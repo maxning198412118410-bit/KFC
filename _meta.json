@@ -1,0 +1,7 @@
+{
+  "slug": "ue-page-builder",
+  "version": "2.0.0",
+  "description": "UE Page Builder - 基于 Semi Design 2.99.2 + Vite + React 的企业级页面生成技能。数据文件外置（tokens/components/layouts/icons），523 个已验证图标，Linear 克制风格，硬门禁保障输出质量。",
+  "author": "WorkBuddy",
+  "publishedAt": 1748736000000
+}

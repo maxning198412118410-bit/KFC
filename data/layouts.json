@@ -1,0 +1,95 @@
+{
+  "name": "UE-Skill Layout Index",
+  "version": "1.0.0",
+  "description": "布局注册表，按 type 分类索引",
+  "baseLayouts": [
+    {
+      "id": "base-blank",
+      "file": "base/base-blank.json",
+      "tags": ["blank", "content", "ai-chat"]
+    },
+    {
+      "id": "base-header-content",
+      "file": "base/base-header-content.json",
+      "tags": ["header", "content", "fullpage"]
+    },
+    {
+      "id": "base-sidebar-content",
+      "file": "base/base-sidebar-content.json",
+      "tags": ["sidebar", "nav", "admin"]
+    },
+    {
+      "id": "base-two-column",
+      "file": "base/base-two-column.json",
+      "tags": ["two-column", "detail", "approval"]
+    },
+    {
+      "id": "base-tabs-content",
+      "file": "base/base-tabs-content.json",
+      "tags": ["tabs", "workspace", "list"]
+    },
+    {
+      "id": "base-centered-card",
+      "file": "base/base-centered-card.json",
+      "tags": ["centered", "card", "login", "form"]
+    }
+  ],
+  "pageLayouts": [
+    {
+      "id": "dashboard",
+      "file": "dashboard.json",
+      "tags": ["dashboard", "admin", "sidebar"]
+    },
+    {
+      "id": "list",
+      "file": "list.json",
+      "tags": ["list", "table", "filter"]
+    },
+    {
+      "id": "form",
+      "file": "form.json",
+      "tags": ["form", "input", "submit"]
+    },
+    {
+      "id": "login",
+      "file": "login.json",
+      "tags": ["login", "centered", "card"]
+    },
+    {
+      "id": "blank",
+      "file": "blank.json",
+      "tags": ["blank", "content"]
+    },
+    {
+      "id": "left-sidebar",
+      "file": "left-sidebar.json",
+      "tags": ["sidebar", "left"]
+    },
+    {
+      "id": "right-sidebar",
+      "file": "right-sidebar.json",
+      "tags": ["sidebar", "right"]
+    },
+    {
+      "id": "top-nav",
+      "file": "top-nav.json",
+      "tags": ["nav", "top"]
+    },
+    {
+      "id": "top-sidebar",
+      "file": "top-sidebar.json",
+      "tags": ["nav", "top", "sidebar"]
+    },
+    {
+      "id": "user-management",
+      "file": "user-management.json",
+      "tags": ["admin", "user", "table"]
+    },
+    {
+      "id": "mcp-tools",
+      "file": "mcp-tools.json",
+      "tags": ["mcp", "tools"]
+    }
+  ],
+  "note": "base/ 目录为基础骨架布局；根目录 *.json 为业务页面实例。生成页面时优先从 base 选取合适骨架，再组装组件。"
+}

@@ -1,0 +1,1725 @@
+"$schema": "https://design-token.schema.components-schema.json",
+  "name": "广西科创金融数智底座平台",
+  "version": "3.1.1",
+  "description": "Semi UI 组件注册表 - 84基线一一映射，AI componentId 命名已统一为 kebab-case",
+  "components": {
+    "semi-divider": {
+      "name": "分割线",
+      "description": "Semi UI Divider 组件，内容分隔线",
+      "semiComponent": "Divider",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/divider",
+      "registryId": "semi-divider"
+    },
+    "semi-grid": {
+      "name": "栅格",
+      "description": "Semi UI Grid 组件（Row/Col），栅格布局系统",
+      "semiComponent": "Row",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/grid",
+      "registryId": "semi-grid"
+    },
+    "semi-icon": {
+      "name": "图标",
+      "description": "Semi UI Icon 组件，通过 SemiIcons 全局对象使用",
+      "semiComponent": "Icon",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/icon",
+      "registryId": "semi-icon"
+    },
+    "semi-layout": {
+      "name": "布局",
+      "description": "Semi UI Layout 组件，页面整体布局框架",
+      "semiComponent": "Layout",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/layout",
+      "registryId": "semi-layout"
+    },
+    "semi-space": {
+      "name": "间距",
+      "description": "Semi UI Space 组件，设置子元素间距",
+      "semiComponent": "Space",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/space",
+      "registryId": "semi-space"
+    },
+    "semi-typography": {
+      "name": "排版",
+      "description": "Semi UI Typography 组件，文本排版（Title/Text/Paragraph）",
+      "semiComponent": "Typography",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/typography",
+      "registryId": "semi-typography"
+    },
+    "semi-float-button": {
+      "name": "悬浮按钮",
+      "description": "Semi UI FloatButton 组件，页面悬浮操作按钮",
+      "semiComponent": "FloatButton",
+      "category": "foundation",
+      "docPath": "/zh-CN/basic/floatButton",
+      "registryId": "semi-float-button"
+    },
+    "semi-auto-complete": {
+      "name": "自动完成",
+      "description": "Semi UI AutoComplete 组件，输入自动补全",
+      "semiComponent": "AutoComplete",
+      "category": "input",
+      "docPath": "/zh-CN/basic/autoComplete",
+      "registryId": "semi-auto-complete"
+    },
+    "semi-cascader": {
+      "name": "级联选择",
+      "description": "Semi UI Cascader 组件，级联选择器",
+      "semiComponent": "Cascader",
+      "category": "input",
+      "docPath": "/zh-CN/basic/cascader",
+      "registryId": "semi-cascader"
+    },
+    "semi-button": {
+      "name": "按钮",
+      "description": "Semi UI Button 组件，触发操作的交互元素",
+      "semiComponent": "Button",
+      "variants": {
+        "primary": {
+          "description": "主要操作按钮",
+          "useCase": "提交、确认、创建等核心操作"
+        },
+        "secondary": {
+          "description": "次要按钮",
+          "useCase": "次要操作"
+        },
+        "tertiary": {
+          "description": "弱化按钮",
+          "useCase": "低权重操作"
+        },
+        "danger": {
+          "description": "危险操作按钮",
+          "useCase": "删除、移除等不可逆操作"
+        },
+        "ghost": {
+          "description": "幽灵按钮",
+          "useCase": "取消、返回、辅助操作"
+        },
+        "warning": {
+          "description": "警告按钮",
+          "useCase": "警示操作"
+        },
+        "outline": {
+          "description": "描边按钮",
+          "useCase": "需要显式边框的交互"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "hover": "鼠标悬停",
+        "active": "按下状态",
+        "focus": "键盘焦点",
+        "disabled": "禁用状态",
+        "loading": "加载中"
+      },
+      "sizes": [
+        "small",
+        "medium",
+        "large",
+        "icon"
+      ],
+      "skillFile": "./semi-button/skill.json",
+      "category": "input",
+      "registryId": "semi-button"
+    },
+    "semi-checkbox": {
+      "name": "复选框",
+      "description": "Semi UI Checkbox 组件，复选框",
+      "semiComponent": "Checkbox",
+      "category": "input",
+      "docPath": "/zh-CN/basic/checkbox",
+      "registryId": "semi-checkbox"
+    },
+    "semi-date-picker": {
+      "name": "日期选择器",
+      "description": "Semi UI DatePicker 组件，日期/时间选择",
+      "semiComponent": "DatePicker",
+      "variants": {
+        "date": {
+          "description": "日期选择",
+          "useCase": "单日选择"
+        },
+        "daterange": {
+          "description": "日期范围选择",
+          "useCase": "区间查询"
+        },
+        "month": {
+          "description": "月份选择",
+          "useCase": "月度统计"
+        },
+        "year": {
+          "description": "年份选择",
+          "useCase": "年度筛选"
+        },
+        "datetime": {
+          "description": "日期时间选择",
+          "useCase": "精确时间记录"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "open": "展开状态",
+        "selected": "已选择",
+        "disabled": "禁用状态"
+      },
+      "skillFile": "./semi-datepicker/skill.json",
+      "category": "input",
+      "registryId": "semi-date-picker"
+    },
+    "semi-form": {
+      "name": "表单",
+      "description": "Semi UI Form 组件，表单项容器与验证",
+      "semiComponent": "Form",
+      "variants": {
+        "horizontal": {
+          "description": "水平布局表单",
+          "useCase": "标准后台表单"
+        },
+        "vertical": {
+          "description": "垂直布局表单",
+          "useCase": "注册、设置页"
+        },
+        "inline": {
+          "description": "行内表单",
+          "useCase": "搜索栏等紧凑场景"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "validating": "验证中",
+        "validated": "已验证",
+        "error": "错误状态"
+      },
+      "skillFile": "./semi-form/skill.json",
+      "category": "input",
+      "registryId": "semi-form"
+    },
+    "semi-input": {
+      "name": "输入框",
+      "description": "Semi UI Input / TextArea 组件，用户输入文本的交互元素",
+      "semiComponent": "Input",
+      "variants": {
+        "text": {
+          "description": "文本输入框",
+          "useCase": "单行文本输入"
+        },
+        "textarea": {
+          "description": "多行文本域",
+          "useCase": "多行文本、备注输入"
+        },
+        "password": {
+          "description": "密码输入框",
+          "useCase": "密码场景"
+        },
+        "search": {
+          "description": "搜索框",
+          "useCase": "搜索场景，带搜索图标"
+        },
+        "number": {
+          "description": "数字输入框",
+          "useCase": "数值输入，带增减按钮"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "focus": "获得焦点",
+        "filled": "已填充",
+        "error": "错误状态",
+        "warning": "警告状态",
+        "success": "成功状态",
+        "disabled": "禁用状态",
+        "readonly": "只读状态"
+      },
+      "sizes": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "skillFile": "./semi-input/skill.json",
+      "category": "input",
+      "registryId": "semi-input"
+    },
+    "semi-input-number": {
+      "name": "数字输入框",
+      "description": "Semi UI InputNumber 组件，数字步进输入",
+      "semiComponent": "InputNumber",
+      "category": "input",
+      "docPath": "/zh-CN/basic/inputNumber",
+      "registryId": "semi-input-number"
+    },
+    "semi-pin-code": {
+      "name": "验证码输入",
+      "description": "Semi UI PinCode 组件，验证码/OTP输入",
+      "semiComponent": "PinCode",
+      "category": "input",
+      "docPath": "/zh-CN/basic/pinCode",
+      "registryId": "semi-pin-code"
+    },
+    "semi-radio": {
+      "name": "单选框",
+      "description": "Semi UI Radio 组件，单选框",
+      "semiComponent": "Radio",
+      "category": "input",
+      "docPath": "/zh-CN/basic/radio",
+      "registryId": "semi-radio"
+    },
+    "semi-rating": {
+      "name": "评分",
+      "description": "Semi UI Rating 组件，星级评分",
+      "semiComponent": "Rating",
+      "category": "input",
+      "docPath": "/zh-CN/basic/rating",
+      "registryId": "semi-rating"
+    },
+    "semi-select": {
+      "name": "选择器",
+      "description": "Semi UI Select 组件，下拉选择器，支持单选/多选/搜索/级联四种模式",
+      "semiComponent": "Select",
+      "variants": {
+        "single": {
+          "description": "单选选择器",
+          "useCase": "标准下拉选择"
+        },
+        "multiple": {
+          "description": "多选选择器",
+          "useCase": "多选项选择"
+        },
+        "search": {
+          "description": "可搜索选择器",
+          "useCase": "选项较多时快速定位"
+        },
+        "cascader": {
+          "description": "级联选择器",
+          "useCase": "省市区等层级数据"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "hover": "悬停状态",
+        "open": "展开状态",
+        "focus": "获得焦点",
+        "selected": "已选择",
+        "disabled": "禁用状态"
+      },
+      "sizes": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "skillFile": "./semi-select/skill.json",
+      "category": "input",
+      "registryId": "semi-select"
+    },
+    "semi-slider": {
+      "name": "滑块",
+      "description": "Semi UI Slider 组件，滑动输入",
+      "semiComponent": "Slider",
+      "category": "input",
+      "docPath": "/zh-CN/basic/slider",
+      "registryId": "semi-slider"
+    },
+    "semi-switch": {
+      "name": "开关",
+      "description": "Semi UI Switch 组件，开关切换",
+      "semiComponent": "Switch",
+      "category": "input",
+      "docPath": "/zh-CN/basic/switch",
+      "registryId": "semi-switch"
+    },
+    "semi-tag-input": {
+      "name": "标签输入",
+      "description": "Semi UI TagInput 组件，标签式输入",
+      "semiComponent": "TagInput",
+      "category": "input",
+      "docPath": "/zh-CN/basic/tagInput",
+      "registryId": "semi-tag-input"
+    },
+    "semi-time-picker": {
+      "name": "时间选择器",
+      "description": "Semi UI TimePicker 组件，时间选择",
+      "semiComponent": "TimePicker",
+      "category": "input",
+      "docPath": "/zh-CN/basic/timePicker",
+      "registryId": "semi-time-picker"
+    },
+    "semi-transfer": {
+      "name": "穿梭框",
+      "description": "Semi UI Transfer 组件，列表穿梭选择",
+      "semiComponent": "Transfer",
+      "category": "input",
+      "docPath": "/zh-CN/basic/transfer",
+      "registryId": "semi-transfer"
+    },
+    "semi-tree-select": {
+      "name": "树选择器",
+      "description": "Semi UI TreeSelect 组件，树形下拉选择",
+      "semiComponent": "TreeSelect",
+      "category": "input",
+      "docPath": "/zh-CN/basic/treeSelect",
+      "registryId": "semi-tree-select"
+    },
+    "semi-upload": {
+      "name": "上传",
+      "description": "Semi UI Upload 组件，文件上传",
+      "semiComponent": "Upload",
+      "variants": {
+        "button": {
+          "description": "按钮式上传",
+          "useCase": "触发式上传"
+        },
+        "drag": {
+          "description": "拖拽上传",
+          "useCase": "区域拖拽上传"
+        },
+        "picture": {
+          "description": "图片上传",
+          "useCase": "图片/头像上传"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "uploading": "上传中",
+        "success": "上传成功",
+        "error": "上传失败"
+      },
+      "skillFile": "./semi-upload/skill.json",
+      "category": "input",
+      "registryId": "semi-upload"
+    },
+    "semi-anchor": {
+      "name": "锚点",
+      "description": "Semi UI Anchor 组件，页面锚点导航",
+      "semiComponent": "Anchor",
+      "category": "navigation",
+      "docPath": "/zh-CN/basic/anchor",
+      "registryId": "semi-anchor"
+    },
+    "semi-back-top": {
+      "name": "回到顶部",
+      "description": "Semi UI BackTop 组件，页面回到顶部",
+      "semiComponent": "BackTop",
+      "category": "navigation",
+      "docPath": "/zh-CN/basic/backTop",
+      "registryId": "semi-back-top"
+    },
+    "semi-breadcrumb": {
+      "name": "面包屑",
+      "description": "Semi UI Breadcrumb 组件，路径导航",
+      "semiComponent": "Breadcrumb",
+      "category": "navigation",
+      "docPath": "/zh-CN/basic/breadcrumb",
+      "registryId": "semi-breadcrumb"
+    },
+    "semi-navigation": {
+      "name": "导航",
+      "description": "Semi UI 导航相关组件集",
+      "variants": {
+        "tabs": {
+          "description": "标签页导航",
+          "useCase": "内容切换"
+        },
+        "breadcrumb": {
+          "description": "面包屑导航",
+          "useCase": "路径指示"
+        },
+        "pagination": {
+          "description": "分页导航",
+          "useCase": "列表分页"
+        }
+      },
+      "skillFile": "./semi-navigation/skill.json",
+      "semiComponent": "Nav",
+      "category": "navigation",
+      "registryId": "semi-navigation"
+    },
+    "semi-pagination": {
+      "name": "分页",
+      "description": "Semi UI Pagination 组件，分页导航",
+      "semiComponent": "Pagination",
+      "category": "navigation",
+      "docPath": "/zh-CN/basic/pagination",
+      "registryId": "semi-pagination"
+    },
+    "semi-steps": {
+      "name": "步骤条",
+      "description": "Semi UI Steps 组件，步骤引导",
+      "semiComponent": "Steps",
+      "category": "navigation",
+      "docPath": "/zh-CN/basic/steps",
+      "registryId": "semi-steps"
+    },
+    "semi-tabs": {
+      "name": "标签页",
+      "description": "Semi UI Tabs 组件，标签页切换",
+      "semiComponent": "Tabs",
+      "variants": {
+        "line": {
+          "description": "线型标签页",
+          "useCase": "标准内容切换"
+        },
+        "card": {
+          "description": "卡片型标签页",
+          "useCase": "分组切换"
+        },
+        "segment": {
+          "description": "分段控制器",
+          "useCase": "视图切换"
+        },
+        "pill": {
+          "description": "胶囊型标签",
+          "useCase": "筛选切换"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "active": "激活状态"
+      },
+      "skillFile": "./semi-tabs/skill.json",
+      "category": "navigation",
+      "registryId": "semi-tabs"
+    },
+    "semi-tree": {
+      "name": "树形控件",
+      "description": "Semi UI Tree 组件，树形结构展示",
+      "semiComponent": "Tree",
+      "category": "navigation",
+      "docPath": "/zh-CN/basic/tree",
+      "registryId": "semi-tree"
+    },
+    "semi-avatar": {
+      "name": "头像",
+      "description": "Semi UI Avatar 组件，用户头像",
+      "semiComponent": "Avatar",
+      "category": "display",
+      "docPath": "/zh-CN/basic/avatar",
+      "registryId": "semi-avatar"
+    },
+    "semi-badge": {
+      "name": "徽章",
+      "description": "Semi UI Badge 组件，强调元素的小型标记",
+      "semiComponent": "Badge",
+      "variants": {
+        "dot": {
+          "description": "圆点徽章",
+          "useCase": "状态指示器"
+        },
+        "pill": {
+          "description": "胶囊徽章",
+          "useCase": "文字标签"
+        },
+        "count": {
+          "description": "计数徽章",
+          "useCase": "数字提醒"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "pulse": "脉冲状态"
+      },
+      "skillFile": "./semi-badge/skill.json",
+      "category": "display",
+      "registryId": "semi-badge"
+    },
+    "semi-calendar": {
+      "name": "日历",
+      "description": "Semi UI Calendar 组件，日历展示",
+      "semiComponent": "Calendar",
+      "category": "display",
+      "docPath": "/zh-CN/basic/calendar",
+      "registryId": "semi-calendar"
+    },
+    "semi-card": {
+      "name": "卡片",
+      "description": "Semi UI Card 组件，承载内容的面板容器",
+      "semiComponent": "Card",
+      "variants": {
+        "default": {
+          "description": "默认卡片",
+          "useCase": "标准内容展示"
+        },
+        "interactive": {
+          "description": "可交互卡片",
+          "useCase": "可点击跳转的面板"
+        },
+        "stat": {
+          "description": "统计卡片",
+          "useCase": "数据指标展示，带数值和标签"
+        },
+        "list-item": {
+          "description": "列表项卡片",
+          "useCase": "列表中的单个条目"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "hover": "悬停状态（仅 interactive）",
+        "selected": "选中状态"
+      },
+      "skillFile": "./semi-card/skill.json",
+      "category": "display",
+      "registryId": "semi-card"
+    },
+    "semi-carousel": {
+      "name": "轮播",
+      "description": "Semi UI Carousel 组件，内容轮播",
+      "semiComponent": "Carousel",
+      "category": "display",
+      "docPath": "/zh-CN/basic/carousel",
+      "registryId": "semi-carousel"
+    },
+    "semi-collapse": {
+      "name": "折叠面板",
+      "description": "Semi UI Collapse 组件，可折叠内容面板",
+      "semiComponent": "Collapse",
+      "category": "display",
+      "docPath": "/zh-CN/basic/collapse",
+      "registryId": "semi-collapse"
+    },
+    "semi-collapsible": {
+      "name": "可折叠容器",
+      "description": "Semi UI Collapsible 组件，可折叠容器",
+      "semiComponent": "Collapsible",
+      "category": "display",
+      "docPath": "/zh-CN/basic/collapsible",
+      "registryId": "semi-collapsible"
+    },
+    "semi-descriptions": {
+      "name": "描述列表",
+      "description": "Semi UI Descriptions 组件，键值对描述列表",
+      "semiComponent": "Descriptions",
+      "category": "display",
+      "docPath": "/zh-CN/basic/descriptions",
+      "registryId": "semi-descriptions"
+    },
+    "semi-dropdown": {
+      "name": "下拉菜单",
+      "description": "Semi UI Dropdown 组件，下拉触发菜单",
+      "semiComponent": "Dropdown",
+      "variants": {
+        "default": {
+          "description": "默认下拉",
+          "useCase": "普通操作菜单"
+        },
+        "context": {
+          "description": "右键上下文菜单",
+          "useCase": "表格行操作等"
+        },
+        "avatar": {
+          "description": "头像下拉菜单",
+          "useCase": "用户信息、退出登录"
+        }
+      },
+      "skillFile": "./semi-dropdown/skill.json",
+      "category": "display",
+      "registryId": "semi-dropdown"
+    },
+    "semi-empty": {
+      "name": "空状态",
+      "description": "Semi UI Empty 组件，无数据时的占位展示",
+      "semiComponent": "Empty",
+      "variants": {
+        "no-data": {
+          "description": "无数据",
+          "useCase": "列表为空"
+        },
+        "no-result": {
+          "description": "无结果",
+          "useCase": "搜索无结果"
+        },
+        "error": {
+          "description": "错误状态",
+          "useCase": "加载失败"
+        }
+      },
+      "skillFile": "./semi-empty/skill.json",
+      "category": "display",
+      "registryId": "semi-empty"
+    },
+    "semi-highlight": {
+      "name": "高亮文本",
+      "description": "Semi UI Highlight 组件，文本高亮",
+      "semiComponent": "Highlight",
+      "category": "display",
+      "docPath": "/zh-CN/basic/highlight",
+      "registryId": "semi-highlight"
+    },
+    "semi-image": {
+      "name": "图片",
+      "description": "Semi UI Image 组件，图片展示",
+      "semiComponent": "Image",
+      "category": "display",
+      "docPath": "/zh-CN/basic/image",
+      "registryId": "semi-image"
+    },
+    "semi-cropper": {
+      "name": "图片裁剪",
+      "description": "Semi UI Cropper 组件，图片裁剪",
+      "semiComponent": "Cropper",
+      "category": "display",
+      "docPath": "/zh-CN/basic/cropper",
+      "registryId": "semi-cropper"
+    },
+    "semi-list": {
+      "name": "列表",
+      "description": "Semi UI List 组件，列表展示",
+      "semiComponent": "List",
+      "category": "display",
+      "docPath": "/zh-CN/basic/list",
+      "registryId": "semi-list"
+    },
+    "semi-modal": {
+      "name": "模态框",
+      "description": "Semi UI Modal 组件，全屏遮罩弹窗",
+      "semiComponent": "Modal",
+      "variants": {
+        "info": {
+          "description": "信息提示框",
+          "useCase": "提示、告知"
+        },
+        "success": {
+          "description": "成功提示框",
+          "useCase": "操作成功反馈"
+        },
+        "warning": {
+          "description": "警告提示框",
+          "useCase": "警示提醒"
+        },
+        "error": {
+          "description": "错误提示框",
+          "useCase": "错误反馈"
+        },
+        "confirm": {
+          "description": "确认操作框",
+          "useCase": "二次确认危险操作"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "open": "展开状态"
+      },
+      "skillFile": "./semi-modal/skill.json",
+      "category": "feedback",
+      "registryId": "semi-modal"
+    },
+    "semi-overflow-list": {
+      "name": "溢出列表",
+      "description": "Semi UI OverflowList 组件，溢出折叠列表",
+      "semiComponent": "OverflowList",
+      "category": "display",
+      "docPath": "/zh-CN/basic/overflowList",
+      "registryId": "semi-overflow-list"
+    },
+    "semi-popover": {
+      "name": "气泡卡片",
+      "description": "Semi UI Popover 组件，气泡弹出内容",
+      "semiComponent": "Popover",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/popover",
+      "registryId": "semi-popover"
+    },
+    "semi-scroll-list": {
+      "name": "滚动列表",
+      "description": "Semi UI ScrollList 组件，横向滚动列表",
+      "semiComponent": "ScrollList",
+      "category": "display",
+      "docPath": "/zh-CN/basic/scrollList",
+      "registryId": "semi-scroll-list"
+    },
+    "semi-side-sheet": {
+      "name": "侧滑面板",
+      "description": "Semi UI SideSheet 组件，侧边滑出面板",
+      "semiComponent": "SideSheet",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/sideSheet",
+      "registryId": "semi-side-sheet"
+    },
+    "semi-table": {
+      "name": "表格",
+      "description": "Semi UI Table 组件，行列结构化数据展示",
+      "semiComponent": "Table",
+      "variants": {
+        "default": {
+          "description": "默认表格",
+          "useCase": "标准数据表格"
+        },
+        "stripe": {
+          "description": "斑马纹表格",
+          "useCase": "易于行区分的长表格"
+        },
+        "compact": {
+          "description": "紧凑表格",
+          "useCase": "高密度数据展示"
+        },
+        "bordered": {
+          "description": "带边框表格",
+          "useCase": "需要明确边界"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "sortable": "可排序列",
+        "selected": "选中行",
+        "hover": "悬停行"
+      },
+      "skillFile": "./semi-table/skill.json",
+      "category": "display",
+      "registryId": "semi-table"
+    },
+    "semi-tag": {
+      "name": "标签",
+      "description": "Semi UI Tag 组件，分类标记的小型元素",
+      "semiComponent": "Tag",
+      "variants": {
+        "default": {
+          "description": "默认标签",
+          "useCase": "一般分类标记"
+        },
+        "status": {
+          "description": "状态标签",
+          "useCase": "表示状态（成功/警告/错误）"
+        },
+        "count": {
+          "description": "计数标签",
+          "useCase": "数量统计展示"
+        },
+        "solid": {
+          "description": "实心标签",
+          "useCase": "高亮标记"
+        },
+        "light": {
+          "description": "浅色标签",
+          "useCase": "低权重标记"
+        },
+        "ghost": {
+          "description": "幽灵标签",
+          "useCase": "边框型标记"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "hover": "悬停状态"
+      },
+      "sizes": [
+        "small",
+        "medium"
+      ],
+      "skillFile": "./semi-tag/skill.json",
+      "category": "display",
+      "registryId": "semi-tag"
+    },
+    "semi-timeline": {
+      "name": "时间轴",
+      "description": "Semi UI Timeline 组件，时间线展示",
+      "semiComponent": "Timeline",
+      "category": "display",
+      "docPath": "/zh-CN/basic/timeline",
+      "registryId": "semi-timeline"
+    },
+    "semi-tooltip": {
+      "name": "文字提示",
+      "description": "Semi UI Tooltip 组件，悬浮信息提示",
+      "semiComponent": "Tooltip",
+      "variants": {
+        "default": {
+          "description": "默认提示",
+          "useCase": "解释说明"
+        },
+        "validation": {
+          "description": "验证提示",
+          "useCase": "表单错误提示"
+        }
+      },
+      "placements": [
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ],
+      "skillFile": "./semi-tooltip/skill.json",
+      "category": "feedback",
+      "registryId": "semi-tooltip"
+    },
+    "semi-user-guide": {
+      "name": "用户引导",
+      "description": "Semi UI UserGuide 组件，新手引导",
+      "semiComponent": "UserGuide",
+      "category": "other",
+      "docPath": "/zh-CN/other/userGuide",
+      "registryId": "semi-user-guide"
+    },
+    "semi-vchart": {
+      "name": "图表",
+      "semiComponent": "VChart",
+      "registryId": "semi-vchart",
+      "description": "Semi UI VChart 组件"
+    },
+    "semi-banner": {
+      "name": "横幅",
+      "description": "Semi UI Banner 组件，全局提示条",
+      "semiComponent": "Banner",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/banner",
+      "registryId": "semi-banner"
+    },
+    "semi-notification": {
+      "name": "通知",
+      "description": "Semi UI Notification 组件，全局通知",
+      "semiComponent": "Notification",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/notification",
+      "registryId": "semi-notification"
+    },
+    "semi-feedback": {
+      "name": "反馈容器",
+      "description": "Semi UI Feedback 组件，反馈信息容器",
+      "semiComponent": "Feedback",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/feedback",
+      "registryId": "semi-feedback"
+    },
+    "semi-popconfirm": {
+      "name": "气泡确认框",
+      "description": "Semi UI Popconfirm 组件，气泡确认",
+      "semiComponent": "Popconfirm",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/popconfirm",
+      "registryId": "semi-popconfirm"
+    },
+    "semi-progress": {
+      "name": "进度条",
+      "description": "Semi UI Progress 组件，展示进度或完成率",
+      "semiComponent": "Progress",
+      "variants": {
+        "line": {
+          "description": "线型进度条",
+          "useCase": "标准进度展示"
+        },
+        "circle": {
+          "description": "圆形进度条",
+          "useCase": "完成率展示"
+        },
+        "dash": {
+          "description": "虚线进度条",
+          "useCase": "特殊样式需求"
+        }
+      },
+      "states": {
+        "default": "默认状态",
+        "success": "完成状态"
+      },
+      "skillFile": "./semi-progress/skill.json",
+      "category": "feedback",
+      "registryId": "semi-progress"
+    },
+    "semi-skeleton": {
+      "name": "骨架屏",
+      "description": "Semi UI Skeleton 组件，加载骨架屏",
+      "semiComponent": "Skeleton",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/skeleton",
+      "registryId": "semi-skeleton"
+    },
+    "semi-spin": {
+      "name": "加载中",
+      "description": "Semi UI Spin 组件，加载指示器",
+      "semiComponent": "Spin",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/spin",
+      "registryId": "semi-spin"
+    },
+    "semi-toast": {
+      "name": "轻提示",
+      "description": "Semi UI Toast 组件，轻量提示",
+      "semiComponent": "Toast",
+      "category": "feedback",
+      "docPath": "/zh-CN/basic/toast",
+      "registryId": "semi-toast"
+    },
+    "semi-code-highlight": {
+      "name": "代码高亮",
+      "description": "Semi UI CodeHighlight 组件，代码语法高亮",
+      "semiComponent": "CodeHighlight",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/codeHighlight",
+      "registryId": "semi-code-highlight"
+    },
+    "semi-markdown": {
+      "name": "Markdown渲染",
+      "description": "Semi UI MarkdownRender 组件，Markdown 内容渲染",
+      "semiComponent": "MarkdownRender",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/markdown",
+      "registryId": "semi-markdown"
+    },
+    "semi-lottie": {
+      "name": "Lottie动画",
+      "description": "Semi UI Lottie 组件，Lottie 动画播放",
+      "semiComponent": "Lottie",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/lottie",
+      "registryId": "semi-lottie"
+    },
+    "semi-chat": {
+      "name": "聊天组件",
+      "description": "Semi UI Chat 组件，聊天界面",
+      "semiComponent": "Chat",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/chat",
+      "registryId": "semi-chat"
+    },
+    "semi-hot-keys": {
+      "name": "快捷键",
+      "description": "Semi UI HotKeys 组件，快捷键绑定",
+      "semiComponent": "HotKeys",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/hotKeys",
+      "registryId": "semi-hot-keys"
+    },
+    "semi-drag-move": {
+      "name": "拖拽移动",
+      "description": "Semi UI DragMove 组件，元素拖拽移动",
+      "semiComponent": "DragMove",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/dragMove",
+      "registryId": "semi-drag-move"
+    },
+    "semi-json-viewer": {
+      "name": "JSON查看器",
+      "description": "Semi UI JsonViewer 组件，JSON 格式化展示",
+      "semiComponent": "JsonViewer",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/jsonViewer",
+      "registryId": "semi-json-viewer"
+    },
+    "semi-audio-player": {
+      "name": "音频播放器",
+      "description": "Semi UI AudioPlayer 组件，音频播放",
+      "semiComponent": "AudioPlayer",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/audioPlayer",
+      "registryId": "semi-audio-player"
+    },
+    "semi-video-player": {
+      "name": "视频播放器",
+      "description": "Semi UI VideoPlayer 组件，视频播放",
+      "semiComponent": "VideoPlayer",
+      "category": "plus",
+      "docPath": "/zh-CN/basic/videoPlayer",
+      "registryId": "semi-video-player"
+    },
+    "semi-config-provider": {
+      "name": "全局配置提供器",
+      "description": "Semi UI ConfigProvider 组件，全局配置注入",
+      "semiComponent": "ConfigProvider",
+      "category": "other",
+      "docPath": "/zh-CN/other/configProvider",
+      "registryId": "semi-config-provider"
+    },
+    "semi-locale-provider": {
+      "name": "国际化提供器",
+      "description": "Semi UI LocaleProvider 组件，国际化配置",
+      "semiComponent": "LocaleProvider",
+      "category": "other",
+      "docPath": "/zh-CN/other/localeProvider",
+      "registryId": "semi-locale-provider"
+    },
+    "semi-ai-icon": {
+      "name": "AI图标",
+      "description": "Semi UI AIIcon 组件，AI 入口图标",
+      "semiComponent": "AIIcon",
+      "category": "ai",
+      "docPath": "/zh-CN/ai/aIIcon",
+      "registryId": "semi-ai-icon"
+    },
+    "semi-ai-button": {
+      "name": "AI按钮",
+      "description": "Semi UI AIButton 组件，AI 执行触发按钮",
+      "semiComponent": "AIButton",
+      "category": "ai",
+      "docPath": "/zh-CN/ai/aIButton",
+      "registryId": "semi-ai-button"
+    },
+    "semi-ai-tag": {
+      "name": "AI标签",
+      "description": "Semi UI AITag 组件，AI 状态标签",
+      "semiComponent": "AITag",
+      "category": "ai",
+      "docPath": "/zh-CN/ai/aITag",
+      "registryId": "semi-ai-tag"
+    },
+    "semi-ai-float-button": {
+      "name": "AI悬浮按钮",
+      "description": "Semi UI AIFloatButton 组件，全局 AI 入口",
+      "semiComponent": "AIFloatButton",
+      "category": "ai",
+      "docPath": "/zh-CN/ai/aIFloatButton",
+      "registryId": "semi-ai-float-button"
+    },
+    "semi-ai-chat-input": {
+      "name": "AI聊天输入框",
+      "description": "Semi UI AIChatInput 组件，AI 聊天输入框",
+      "semiComponent": "AIChatInput",
+      "category": "ai",
+      "docPath": "/zh-CN/ai/aIChatInput",
+      "registryId": "semi-ai-chat-input"
+    },
+    "semi-ai-chat-dialogue": {
+      "name": "AI聊天对话区",
+      "description": "Semi UI AIChatDialogue 组件，AI 对话展示区",
+      "semiComponent": "AIChatDialogue",
+      "category": "ai",
+      "docPath": "/zh-CN/ai/aIChatDialogue",
+      "registryId": "semi-ai-chat-dialogue"
+    }
+  },
+  "foundation": {
+    "colors": {
+      "source": "../tokens.json",
+      "description": "色彩原子层"
+    },
+    "typography": {
+      "source": "../tokens.json",
+      "description": "字体层级原子层"
+    },
+    "spacing": {
+      "source": "../tokens.json",
+      "description": "间距原子层"
+    },
+    "radius": {
+      "source": "../tokens.json",
+      "description": "圆角原子层"
+    }
+  },
+  "typographyConstraints": {
+    "description": "组件 Typography 规格约束 - 统一字号使用，避免跨页面不统一",
+    "pageTitle": {
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "1.3"
+    },
+    "sectionTitle": {
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "1.4"
+    },
+    "cardTitle": {
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "1.4"
+    },
+    "cardBody": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "1.5"
+    },
+    "statCardLabel": {
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "1.4",
+      "color": "var(--color-text-secondary)"
+    },
+    "statCardValue": {
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "1.2"
+    },
+    "tableHeader": {
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "1.4"
+    },
+    "tableCell": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "1.5"
+    },
+    "tagText": {
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "lineHeight": "1.2"
+    },
+    "buttonSmall": {
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "lineHeight": "1.2"
+    },
+    "buttonMedium": {
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "1.2"
+    },
+    "buttonLarge": {
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "1.2"
+    },
+    "formLabel": {
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "1.4"
+    },
+    "formInput": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "1.4"
+    },
+    "breadcrumb": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "1.4"
+    },
+    "pagination": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "1.4"
+    },
+    "navItem": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "1.4"
+    },
+    "navItemActive": {
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "1.4"
+    }
+  },
+  "usageGuidelines": {
+    "componentSelection": "根据业务场景选择对应 variant，避免滥用 variant",
+    "stateManagement": "状态切换需平滑过渡，150-200ms",
+    "accessibility": "所有交互组件需支持键盘操作和屏幕阅读",
+    "responsiveBehavior": "组件需适配不同视口宽度"
+  },
+  "note": "所有组件均为 Semi UI (@douyinfe/semi-ui) 原生组件，生成页面时统一从 semi-* 中选取，HTML 中使用 window['@douyinfe/semi-ui'] 调用。",
+  "nlRegistryVersion": "1.0.0",
+  "nlRegistry": [
+    {
+      "componentId": "semi-divider",
+      "name": "分割线",
+      "semiComponent": "Divider",
+      "registryId": "semi-divider"
+    },
+    {
+      "componentId": "semi-grid",
+      "name": "栅格",
+      "semiComponent": "Row",
+      "registryId": "semi-grid"
+    },
+    {
+      "componentId": "semi-icon",
+      "name": "图标",
+      "semiComponent": "Icon",
+      "registryId": "semi-icon"
+    },
+    {
+      "componentId": "semi-layout",
+      "name": "布局",
+      "semiComponent": "Layout",
+      "registryId": "semi-layout"
+    },
+    {
+      "componentId": "semi-space",
+      "name": "间距",
+      "semiComponent": "Space",
+      "registryId": "semi-space"
+    },
+    {
+      "componentId": "semi-typography",
+      "name": "排版",
+      "semiComponent": "Typography",
+      "registryId": "semi-typography"
+    },
+    {
+      "componentId": "semi-float-button",
+      "name": "悬浮按钮",
+      "semiComponent": "FloatButton",
+      "registryId": "semi-float-button"
+    },
+    {
+      "componentId": "semi-auto-complete",
+      "name": "自动完成",
+      "semiComponent": "AutoComplete",
+      "registryId": "semi-auto-complete"
+    },
+    {
+      "componentId": "semi-cascader",
+      "name": "级联选择",
+      "semiComponent": "Cascader",
+      "registryId": "semi-cascader"
+    },
+    {
+      "componentId": "semi-button",
+      "name": "按钮",
+      "semiComponent": "Button",
+      "registryId": "semi-button"
+    },
+    {
+      "componentId": "semi-checkbox",
+      "name": "复选框",
+      "semiComponent": "Checkbox",
+      "registryId": "semi-checkbox"
+    },
+    {
+      "componentId": "semi-date-picker",
+      "name": "日期选择器",
+      "semiComponent": "DatePicker",
+      "registryId": "semi-date-picker"
+    },
+    {
+      "componentId": "semi-form",
+      "name": "表单",
+      "semiComponent": "Form",
+      "registryId": "semi-form"
+    },
+    {
+      "componentId": "semi-input",
+      "name": "输入框",
+      "semiComponent": "Input",
+      "registryId": "semi-input"
+    },
+    {
+      "componentId": "semi-input-number",
+      "name": "数字输入框",
+      "semiComponent": "InputNumber",
+      "registryId": "semi-input-number"
+    },
+    {
+      "componentId": "semi-pin-code",
+      "name": "验证码输入",
+      "semiComponent": "PinCode",
+      "registryId": "semi-pin-code"
+    },
+    {
+      "componentId": "semi-radio",
+      "name": "单选框",
+      "semiComponent": "Radio",
+      "registryId": "semi-radio"
+    },
+    {
+      "componentId": "semi-rating",
+      "name": "评分",
+      "semiComponent": "Rating",
+      "registryId": "semi-rating"
+    },
+    {
+      "componentId": "semi-select",
+      "name": "选择器",
+      "semiComponent": "Select",
+      "registryId": "semi-select"
+    },
+    {
+      "componentId": "semi-slider",
+      "name": "滑块",
+      "semiComponent": "Slider",
+      "registryId": "semi-slider"
+    },
+    {
+      "componentId": "semi-switch",
+      "name": "开关",
+      "semiComponent": "Switch",
+      "registryId": "semi-switch"
+    },
+    {
+      "componentId": "semi-tag-input",
+      "name": "标签输入",
+      "semiComponent": "TagInput",
+      "registryId": "semi-tag-input"
+    },
+    {
+      "componentId": "semi-time-picker",
+      "name": "时间选择器",
+      "semiComponent": "TimePicker",
+      "registryId": "semi-time-picker"
+    },
+    {
+      "componentId": "semi-transfer",
+      "name": "穿梭框",
+      "semiComponent": "Transfer",
+      "registryId": "semi-transfer"
+    },
+    {
+      "componentId": "semi-tree-select",
+      "name": "树选择器",
+      "semiComponent": "TreeSelect",
+      "registryId": "semi-tree-select"
+    },
+    {
+      "componentId": "semi-upload",
+      "name": "上传",
+      "semiComponent": "Upload",
+      "registryId": "semi-upload"
+    },
+    {
+      "componentId": "semi-anchor",
+      "name": "锚点",
+      "semiComponent": "Anchor",
+      "registryId": "semi-anchor"
+    },
+    {
+      "componentId": "semi-back-top",
+      "name": "回到顶部",
+      "semiComponent": "BackTop",
+      "registryId": "semi-back-top"
+    },
+    {
+      "componentId": "semi-breadcrumb",
+      "name": "面包屑",
+      "semiComponent": "Breadcrumb",
+      "registryId": "semi-breadcrumb"
+    },
+    {
+      "componentId": "semi-navigation",
+      "name": "导航",
+      "semiComponent": "Nav",
+      "registryId": "semi-navigation"
+    },
+    {
+      "componentId": "semi-pagination",
+      "name": "分页",
+      "semiComponent": "Pagination",
+      "registryId": "semi-pagination"
+    },
+    {
+      "componentId": "semi-steps",
+      "name": "步骤条",
+      "semiComponent": "Steps",
+      "registryId": "semi-steps"
+    },
+    {
+      "componentId": "semi-tabs",
+      "name": "标签页",
+      "semiComponent": "Tabs",
+      "registryId": "semi-tabs"
+    },
+    {
+      "componentId": "semi-tree",
+      "name": "树形控件",
+      "semiComponent": "Tree",
+      "registryId": "semi-tree"
+    },
+    {
+      "componentId": "semi-avatar",
+      "name": "头像",
+      "semiComponent": "Avatar",
+      "registryId": "semi-avatar"
+    },
+    {
+      "componentId": "semi-badge",
+      "name": "徽章",
+      "semiComponent": "Badge",
+      "registryId": "semi-badge"
+    },
+    {
+      "componentId": "semi-calendar",
+      "name": "日历",
+      "semiComponent": "Calendar",
+      "registryId": "semi-calendar"
+    },
+    {
+      "componentId": "semi-card",
+      "name": "卡片",
+      "semiComponent": "Card",
+      "registryId": "semi-card"
+    },
+    {
+      "componentId": "semi-carousel",
+      "name": "轮播",
+      "semiComponent": "Carousel",
+      "registryId": "semi-carousel"
+    },
+    {
+      "componentId": "semi-collapse",
+      "name": "折叠面板",
+      "semiComponent": "Collapse",
+      "registryId": "semi-collapse"
+    },
+    {
+      "componentId": "semi-collapsible",
+      "name": "可折叠容器",
+      "semiComponent": "Collapsible",
+      "registryId": "semi-collapsible"
+    },
+    {
+      "componentId": "semi-descriptions",
+      "name": "描述列表",
+      "semiComponent": "Descriptions",
+      "registryId": "semi-descriptions"
+    },
+    {
+      "componentId": "semi-dropdown",
+      "name": "下拉菜单",
+      "semiComponent": "Dropdown",
+      "registryId": "semi-dropdown"
+    },
+    {
+      "componentId": "semi-empty",
+      "name": "空状态",
+      "semiComponent": "Empty",
+      "registryId": "semi-empty"
+    },
+    {
+      "componentId": "semi-highlight",
+      "name": "高亮文本",
+      "semiComponent": "Highlight",
+      "registryId": "semi-highlight"
+    },
+    {
+      "componentId": "semi-image",
+      "name": "图片",
+      "semiComponent": "Image",
+      "registryId": "semi-image"
+    },
+    {
+      "componentId": "semi-cropper",
+      "name": "图片裁剪",
+      "semiComponent": "Cropper",
+      "registryId": "semi-cropper"
+    },
+    {
+      "componentId": "semi-list",
+      "name": "列表",
+      "semiComponent": "List",
+      "registryId": "semi-list"
+    },
+    {
+      "componentId": "semi-modal",
+      "name": "模态框",
+      "semiComponent": "Modal",
+      "registryId": "semi-modal"
+    },
+    {
+      "componentId": "semi-overflow-list",
+      "name": "溢出列表",
+      "semiComponent": "OverflowList",
+      "registryId": "semi-overflow-list"
+    },
+    {
+      "componentId": "semi-popover",
+      "name": "气泡卡片",
+      "semiComponent": "Popover",
+      "registryId": "semi-popover"
+    },
+    {
+      "componentId": "semi-scroll-list",
+      "name": "滚动列表",
+      "semiComponent": "ScrollList",
+      "registryId": "semi-scroll-list"
+    },
+    {
+      "componentId": "semi-side-sheet",
+      "name": "侧滑面板",
+      "semiComponent": "SideSheet",
+      "registryId": "semi-side-sheet"
+    },
+    {
+      "componentId": "semi-table",
+      "name": "表格",
+      "semiComponent": "Table",
+      "registryId": "semi-table"
+    },
+    {
+      "componentId": "semi-tag",
+      "name": "标签",
+      "semiComponent": "Tag",
+      "registryId": "semi-tag"
+    },
+    {
+      "componentId": "semi-timeline",
+      "name": "时间轴",
+      "semiComponent": "Timeline",
+      "registryId": "semi-timeline"
+    },
+    {
+      "componentId": "semi-tooltip",
+      "name": "文字提示",
+      "semiComponent": "Tooltip",
+      "registryId": "semi-tooltip"
+    },
+    {
+      "componentId": "semi-user-guide",
+      "name": "用户引导",
+      "semiComponent": "UserGuide",
+      "registryId": "semi-user-guide"
+    },
+    {
+      "componentId": "semi-vchart",
+      "name": "图表",
+      "semiComponent": "VChart",
+      "registryId": "semi-vchart"
+    },
+    {
+      "componentId": "semi-banner",
+      "name": "横幅",
+      "semiComponent": "Banner",
+      "registryId": "semi-banner"
+    },
+    {
+      "componentId": "semi-notification",
+      "name": "通知",
+      "semiComponent": "Notification",
+      "registryId": "semi-notification"
+    },
+    {
+      "componentId": "semi-feedback",
+      "name": "反馈容器",
+      "semiComponent": "Feedback",
+      "registryId": "semi-feedback"
+    },
+    {
+      "componentId": "semi-popconfirm",
+      "name": "气泡确认框",
+      "semiComponent": "Popconfirm",
+      "registryId": "semi-popconfirm"
+    },
+    {
+      "componentId": "semi-progress",
+      "name": "进度条",
+      "semiComponent": "Progress",
+      "registryId": "semi-progress"
+    },
+    {
+      "componentId": "semi-skeleton",
+      "name": "骨架屏",
+      "semiComponent": "Skeleton",
+      "registryId": "semi-skeleton"
+    },
+    {
+      "componentId": "semi-spin",
+      "name": "加载中",
+      "semiComponent": "Spin",
+      "registryId": "semi-spin"
+    },
+    {
+      "componentId": "semi-toast",
+      "name": "轻提示",
+      "semiComponent": "Toast",
+      "registryId": "semi-toast"
+    },
+    {
+      "componentId": "semi-code-highlight",
+      "name": "代码高亮",
+      "semiComponent": "CodeHighlight",
+      "registryId": "semi-code-highlight"
+    },
+    {
+      "componentId": "semi-markdown",
+      "name": "Markdown渲染",
+      "semiComponent": "MarkdownRender",
+      "registryId": "semi-markdown"
+    },
+    {
+      "componentId": "semi-lottie",
+      "name": "Lottie动画",
+      "semiComponent": "Lottie",
+      "registryId": "semi-lottie"
+    },
+    {
+      "componentId": "semi-chat",
+      "name": "聊天组件",
+      "semiComponent": "Chat",
+      "registryId": "semi-chat"
+    },
+    {
+      "componentId": "semi-hot-keys",
+      "name": "快捷键",
+      "semiComponent": "HotKeys",
+      "registryId": "semi-hot-keys"
+    },
+    {
+      "componentId": "semi-drag-move",
+      "name": "拖拽移动",
+      "semiComponent": "DragMove",
+      "registryId": "semi-drag-move"
+    },
+    {
+      "componentId": "semi-json-viewer",
+      "name": "JSON查看器",
+      "semiComponent": "JsonViewer",
+      "registryId": "semi-json-viewer"
+    },
+    {
+      "componentId": "semi-audio-player",
+      "name": "音频播放器",
+      "semiComponent": "AudioPlayer",
+      "registryId": "semi-audio-player"
+    },
+    {
+      "componentId": "semi-video-player",
+      "name": "视频播放器",
+      "semiComponent": "VideoPlayer",
+      "registryId": "semi-video-player"
+    },
+    {
+      "componentId": "semi-ai-icon",
+      "name": "AI图标",
+      "semiComponent": "AIIcon",
+      "registryId": "semi-ai-icon"
+    },
+    {
+      "componentId": "semi-ai-button",
+      "name": "AI按钮",
+      "semiComponent": "AIButton",
+      "registryId": "semi-ai-button"
+    },
+    {
+      "componentId": "semi-ai-tag",
+      "name": "AI标签",
+      "semiComponent": "AITag",
+      "registryId": "semi-ai-tag"
+    },
+    {
+      "componentId": "semi-ai-float-button",
+      "name": "AI悬浮按钮",
+      "semiComponent": "AIFloatButton",
+      "registryId": "semi-ai-float-button"
+    },
+    {
+      "componentId": "semi-ai-chat-input",
+      "name": "AI聊天输入框",
+      "semiComponent": "AIChatInput",
+      "registryId": "semi-ai-chat-input"
+    },
+    {
+      "componentId": "semi-ai-chat-dialogue",
+      "name": "AI聊天对话区",
+      "semiComponent": "AIChatDialogue",
+      "registryId": "semi-ai-chat-dialogue"
+    },
+    {
+      "componentId": "semi-config-provider",
+      "name": "全局配置提供器",
+      "semiComponent": "ConfigProvider",
+      "registryId": "semi-config-provider"
+    },
+    {
+      "componentId": "semi-locale-provider",
+      "name": "国际化提供器",
+      "semiComponent": "LocaleProvider",
+      "registryId": "semi-locale-provider"
+    }
+  ],
+  "nlRegistryMeta": {
+    "total": 84,
+    "requiredFields": [
+      "componentId",
+      "name",
+      "semiComponent",
+      "registryId"
+    ],
+    "sources": [
+      "official-details-foundation-input.json",
+      "official-details-navigation-display.json",
+      "official-details-feedback-plus.json",
+      "official-details-ai-other.json"
+    ],
+    "missingDetailCount": 0,
+    "aliasConflictCount": 0,
+    "componentsTotal": 84,
+    "subComponentsTotal": 15
+  }
+}
