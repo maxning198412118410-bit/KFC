@@ -1,6 +1,6 @@
 # UE Page Builder
 
-> 基于 **Semi Design + Vite + React** 的企业级页面生成器。数据文件外置、图标名强制验证、组件边界检查、Linear 克制风格，硬门禁保障输出质量。
+> 基于 **Semi Design + Vite + React** 的企业级页面生成器。数据文件外置、图标名强制验证、组件边界检查，硬门禁保障输出质量。
 
 [![Semi UI](https://img.shields.io/badge/Semi_UI-2.99.2-2993E8)](https://semi.design/)
 [![React](https://img.shields.io/badge/React-18.2-61DAFB)](https://react.dev/)
